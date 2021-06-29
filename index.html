@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Ram & CPU Monitor</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      #cpu, #ram {
+        width: 200px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="ui statistics">
+  <div class="statistic">
+    <div class="value">
+      <i class="server icon"></i> <span id="cpu"> CPU 0%</span>
+    </div>
+    <div class="label">
+      CPU
+    </div>
+  </div>
+  <div class="statistic">
+    <div class="value">
+      <i class="microchip icon"></i> <span id="ram"> RAM 0%</span>
+    </div>
+    <div class="label">
+      RAM
+    </div>
+  </div>
+  </div>
+  <script src="./renderer.js"></script>
+  </body>
+</html>
